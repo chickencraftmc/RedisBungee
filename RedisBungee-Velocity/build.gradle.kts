@@ -54,7 +54,7 @@ tasks {
         options.linksOffline("https://ci.limework.net/RedisBungee/RedisBungee-API/build/docs/javadoc", apiDocs.path)
     }
     runVelocity {
-        velocityVersion("3.2.0-SNAPSHOT")
+        velocityVersion("3.3.0-SNAPSHOT")
         environment["REDISBUNGEE_PROXY_ID"] = "velocity-1"
     }
     compileJava {
