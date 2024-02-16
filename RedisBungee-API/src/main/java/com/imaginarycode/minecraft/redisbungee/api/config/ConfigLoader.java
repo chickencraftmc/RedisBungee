@@ -54,7 +54,7 @@ public interface ConfigLoader {
         final boolean restoreOldKickBehavior = node.getNode("disable-kick-when-online").getBoolean(false);
         String redisPassword = node.getNode("redis-password").getString("");
         String redisUsername = node.getNode("redis-username").getString("");
-        String proxyId = node.getNode("proxy-id").getString("");
+        String proxyId = node.getNode("proxy-id").getString("test-2");
         final int maxConnections = node.getNode("max-redis-connections").getInt(10);
         List<String> exemptAddresses;
         try {
